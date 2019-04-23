@@ -26,7 +26,6 @@ def printer(conference_speakers)
     room_assignment = assign_rooms(conference_speakers)
     puts badge_message
     puts room_assignment
-  end
 end
 
 printer(conference_speakers)
