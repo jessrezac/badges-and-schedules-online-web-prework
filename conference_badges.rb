@@ -23,7 +23,7 @@ end
 
 def printer(conference_speakers)
   badge_messages = batch_badge_creator(conference_speakers)
-  badge_messages
+  puts badge_messages
   room_assignments = assign_rooms(conference_speakers)
-  room_assignments
+  puts room_assignments
 end
