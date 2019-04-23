@@ -26,5 +26,6 @@ def printer(conference_speakers)
     room_assignment = assign_rooms(conference_speakers)
     conference_speakers.each_with_index do |speaker, index|
       puts badge_message.fetch(index)
-    puts room_assignment.fetch(index)
+      puts room_assignment.fetch(index)
+    end
 end
