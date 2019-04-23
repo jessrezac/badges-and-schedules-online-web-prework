@@ -27,5 +27,3 @@ def printer(conference_speakers)
     puts badge_message
     puts room_assignment
 end
-
-printer(conference_speakers)
