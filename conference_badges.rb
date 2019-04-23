@@ -7,7 +7,7 @@ end
 def batch_badge_creator(conference_speakers)
   badge_messages = []
   conference_speakers.each do |speaker|
-    badge_messages.pop(badge_maker(speaker))
+    badge_messages.push(badge_maker(speaker))
   end
   return badge_messages
 end
@@ -22,5 +22,3 @@ def printer(conference_speakers)
   batch_badge_creator(conference_speakers)
   assign_rooms(conference_speakers)
 end
-
-printer(conference_speakers)
