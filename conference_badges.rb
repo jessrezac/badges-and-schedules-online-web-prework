@@ -17,3 +17,10 @@ def assign_rooms(conference_speakers)
     puts "Hello, #{speaker}! You'll be assigned to room #{assignment}!"
   end
 end
+
+def printer(conference_speakers)
+  batch_badge_creator(conference_speakers)
+  assign_rooms(conference_speakers)
+end
+
+printer(conference_speakers)
