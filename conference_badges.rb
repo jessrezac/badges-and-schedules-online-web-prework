@@ -22,10 +22,11 @@ def assign_rooms(conference_speakers)
 end
 
 def printer(conference_speakers)
-  badge_messages = batch_badge_creator(conference_speakers)
-  puts badge_messages
-  room_assignments = assign_rooms(conference_speakers)
-  puts room_assignments
+  conference_speakers.each do |speaker|
+    badge_message = batch_badge_creator(speaker)
+    room_assignment = assign_rooms(speaker)
+    puts badge_message
+    puts room_assignment
 end
 
 printer(conference_speakers)
