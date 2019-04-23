@@ -15,7 +15,7 @@ end
 def assign_rooms(conference_speakers)
   conference_speakers.each_with_index  do |speaker, assignment|
     assignment += 1
-    puts "Hello, #{speaker}! You'll be assigned to room #{assignment}!"
+    returns "Hello, #{speaker}! You'll be assigned to room #{assignment}!"
   end
 end
 
