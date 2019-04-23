@@ -22,6 +22,8 @@ def assign_rooms(conference_speakers)
 end
 
 def printer(conference_speakers)
-  batch_badge_creator(conference_speakers)
-  assign_rooms(conference_speakers)
+  badge_messages = batch_badge_creator(conference_speakers)
+  puts badge_messages
+  room_assignments = assign_rooms(conference_speakers)
+  puts room_assignments
 end
