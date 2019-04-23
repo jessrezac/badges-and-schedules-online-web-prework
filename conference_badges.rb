@@ -18,6 +18,7 @@ def assign_rooms(conference_speakers)
     assignment += 1
     assignment_messages.push("Hello, #{speaker}! You'll be assigned to room #{assignment}!")
   end
+  return assignment_messages
 end
 
 def printer(conference_speakers)
